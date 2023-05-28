@@ -1,0 +1,23 @@
+<html>
+
+<head>
+	<script language='javascript'>
+		function submit(){
+document.redirectForm.submit();
+}
+	</script>
+</head>
+
+<body onLoad='submit()'>
+	<form action='SRPayMsgHandler' name='redirectForm' method='POST' target='_top'>
+		<div id='dialog-message' style='margin-top: 25%;'>
+			<p align='center'>
+				<img src ='./images/pleaseWait.gif' align='middle'/>
+</p>
+				<p align='center' style='font-size: 12px'></p>
+		</div>
+		<input type='hidden' name='Loading' value='true' />
+</form>
+</body>
+
+</html>
